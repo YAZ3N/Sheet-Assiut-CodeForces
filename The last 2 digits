@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main() {
+	
+	long long a, b, c, d;
+	cin >> a >> b >> c >> d;
+	a = a % 100;
+	b = b % 100;
+	c = c % 100;
+	d = d % 100;
+	long long resalt = a * b * c * d;
+	resalt = resalt%100;
+	if (resalt%100<= 9) {
+		cout << 0 << resalt;
+	}
+	else {
+		cout << resalt;
+	}
+ 
+	
+}
+ 
