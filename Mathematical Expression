@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int a, b, c;
+	char sign, op;
+ 
+	cin >> a >> sign >> b >> op >> c;
+	int resalt;
+	if (sign=='+') {
+		resalt = a + b;
+	}
+	else if (sign == '-') {
+		resalt = a - b;
+	}
+	 else if (sign == '*') {
+		resalt = a * b;
+	}
+ 
+	if (resalt == c) {
+		cout << "Yes";
+	}
+	else {
+		cout << resalt;
+	}
+ 
+}
