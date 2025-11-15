@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+	
+	long long l1,r1,l2,r2;
+	cin >> l1>> r1>>l2>> r2;
+	long long resalt1 = max(l1, l2);
+	long long resalt2 = min(r1, r2);
+	if (resalt1 <= resalt2) {
+		cout << resalt1 << " "<<resalt2;
+	}
+	else {
+		cout << -1;
+	}
+}
+ 
+ 
