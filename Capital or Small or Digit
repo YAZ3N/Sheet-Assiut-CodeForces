@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	char op;
+	cin >> op;
+	if (op >= 97 && op <= 122) {
+		cout << "ALPHA"<<endl<<"IS SMALL";
+	}
+	else if (op >= 65 && op<= 90) {
+		cout << "ALPHA"<<endl<<"IS CAPITAL";
+	}
+	else {
+		cout << "IS DIGIT";
+	}
+}
