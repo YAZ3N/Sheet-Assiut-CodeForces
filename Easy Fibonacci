@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main() {
+ 
+	int n; cin >> n;
+	long long First = 0, second = 1;
+	long long sum = 0;
+	if (n == 1) {
+		cout << sum;
+	}
+	else {
+		cout <<First << " " << second<<" ";
+	}
+	for (int i = 0; i <n-2; i++) {
+		sum = First + second;
+		cout <<sum << " ";
+		First = second;
+		second = sum;	
+	}
+}
