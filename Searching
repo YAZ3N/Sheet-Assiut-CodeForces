@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main() {
+ 
+	int n; cin >> n;
+	long long *array = new long long[n];
+	
+	long long element;
+	for (int i = 0; i < n; i++) {
+		cin >> array[i];
+	}
+	int counter = 0;
+	cin >> element;
+	for (int i = 0; i < n; i++) {
+		if (element == array[i]) {
+			cout << i;
+			counter++;
+			break;
+		}		
+	}
+	if (counter == 0) {
+		cout << -1;
+	}
+}
